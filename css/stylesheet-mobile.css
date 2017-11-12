@@ -1,0 +1,145 @@
+/* Mobile stylesheet for the mobile website version, written by 
+  Nicolas Mavrides */
+
+/*List of globally used (across all pages) CSS rules here*/
+
+body {
+	background-color: #66ccff;
+}
+
+/* Header image taken by Nicolas Mavrides*/
+header {
+	background-image: url("../images/golden-beach.jpg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width: 97%;
+	border: solid black 3px;
+	border-radius: 10px;
+	padding: 1%;
+}
+
+footer {
+	background-color: #b3ffff;
+	width: 97%;
+	border: solid black 3px;
+	border-radius: 10px;
+	padding: 1%;
+	text-align: center;
+	font-size: 80%;
+}
+
+h1 {
+	border-bottom: double black 3px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 550px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Section in banner which holds the author's name and email address in the 
+top-right of the banner*/
+#author {
+	width: 50%;
+	text-align: right;
+	float: right;
+	color: #e5ffff;
+	font-weight: bold;
+	padding: 1px;
+}
+
+#main_content {
+	background-color: #b3ffff;
+	width: 97%;
+	border: solid black 3px;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	padding: 1%;
+}
+
+#profile_pic {
+	margin: %;
+}
+
+#desktop_navbar {
+	display: none;
+}
+
+#mobile_navbar {
+	padding: 2%;
+	float: center;
+}
+
+.nav_button {
+	display: inline-block;
+	width: 30%;
+	background: #b3ffff;
+	border: solid black 2px;
+	border-radius: 10px; 
+	text-align: center;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1%;
+	margin-bottom: 1%;
+}
+/*Change nav button colour when clicked on*/
+.nav_button:active {
+	background: #80ffff;
+}
+/*End of global CSS rules list*/
+
+/*List of CSS rules only used on specific pages here*/
+/*CSS for pictures used on the Degree modules pages*/
+.module_pics {
+	border: solid black 1px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#contact_form {
+	border: solid black 2px;
+	padding: 0% 1% 1% 1%;
+	background-color: #ccffff;
+}
+
+canvas {
+    width:100%;
+    margin: auto;
+	border: solid black 1px;
+	background-color: white;
+	position: relative;
+}
+
+/*Properties for the title of each news piece*/
+.news_title { 
+	border: solid black 1px;
+	border-radius: 5px;
+	background-color: #80ffff;
+}
+
+/*Properties for the news content that appears below its news title*/
+.news_item {
+	font-size: 14px;
+	font-weight: normal;
+	display: none;
+	background-color: #80ffff;
+}
+
+/*CSS rule to make news content appear below its title when the user taps on 
+the title*/
+.news_title:hover .news_item {
+	display: block;
+}
+/*End of CSS rules list*/

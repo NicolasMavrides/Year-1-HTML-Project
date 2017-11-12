@@ -1,0 +1,154 @@
+/* Desktop stylesheet for the desktop website version, written by 
+  Nicolas Mavrides.
+  
+  Background image taken by Petr Kratochvil (source: http://goo.gl/3hBMfA),
+  used with author's permission as per the CC Public Domain license*/
+
+/*List of globally used (across all pages) CSS rules here*/
+
+body {
+	background-image: url("../images/background.jpg");
+}
+
+/* Header image taken by Nicolas Mavrides*/
+header {
+	background-image: url("../images/golden-beach.jpg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width: 98%;
+	border: solid black 3px;
+	border-radius: 10px;
+}
+
+footer {
+	background-color: #b3ffff;
+	width: 78%;
+	margin: 1%;
+	padding: 1%;
+	float: right;
+	border: solid black 3px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 80%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	border-bottom: double black 3px;
+}
+
+#wrapper {
+	width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Section in banner which holds the author's name and email address in the 
+top-right of the banner*/
+#author {
+	width: 50%;
+	text-align: right;
+	float: right;
+	color: #e5ffff;
+	font-weight: bold;
+	padding: 1px;
+}
+
+#main_content {
+	background-color: #b3ffff;
+	width: 78%;
+	float: right;
+	border: solid black 3px;
+	border-radius: 10px;
+	margin: 1%;
+	padding: 0% 1% 1% 1%;
+}
+
+#profile_pic {
+	margin: 1%;
+}
+
+#profile_pic:hover {
+	transform: scale(1.1,1.1);
+}
+
+#desktop_navbar {
+	width: 16%;
+	float: left;
+	margin-top: 1%;
+}
+
+#mobile_navbar {
+	display: none;
+}
+
+.nav_button {
+	display: block;
+	width: 100%;
+	background: #b3ffff;
+	border: solid black 4px;
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0% 3% 1% 0%;
+	padding: 3%;
+	border-radius: 15px;
+}
+
+/*Change nav button colour when cursor hovers over it*/
+.nav_button:hover {
+	background: #80ffff;
+}
+/*End of global CSS rules list*/
+
+/*List of CSS rules only used on specific pages here*/
+/*CSS for pictures used on the Degree modules pages*/
+.module_pics {
+	border: solid black 1px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#contact_form {
+	border: solid black 2px;
+	padding: 0% 1% 1% 1%;
+	background-color: #ccffff;
+}
+
+canvas {
+    width:100%;
+    margin: auto;
+	border: solid black 1px;
+	background-color: white;
+	position: relative;
+}
+
+/*Properties for the title of each news piece*/
+.news_title { 
+	border: solid black 1px;
+	border-radius: 5px;
+	background-color: #80ffff;
+}
+
+/*Properties for the news content that appears below its news title*/
+.news_item {
+	font-size: 14px;
+	font-weight: normal;
+	display: none;
+	background-color: #80ffff;
+}
+
+/*CSS rule to make news content appear below its title when the cursor hovers
+over it*/
+.news_title:hover .news_item {
+	display: block;
+}
